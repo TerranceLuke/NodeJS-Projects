@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-projects",
+  "version": "1.0.0",
+  "description": "NodeJS playground for testing and learning.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TerranceLuke/NodeJS-Projects.git"
+  },
+  "keywords": [
+    "NodeJS"
+  ],
+  "author": "Terrance Luke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TerranceLuke/NodeJS-Projects/issues"
+  },
+  "homepage": "https://github.com/TerranceLuke/NodeJS-Projects#readme",
+  "dependencies": {
+    "nsp": "^3.2.1"
+  }
+}
