@@ -1,16 +1,16 @@
 const express = require('express');
 const path =  require('path');
-const open = require('open');
+const open = require('opn');
 
 const port = 3000;
 const app = express();
 
-app.get('/', function(req,res)
+app.get('/', function(req, res)
 {
-    res.sendFile(path.join(__dirname, '../scr/index.html'));
+    res.sendFile(path.join(__dirname, '../src/index.html'));
 });
 
-//app.get()
+//app.get(/)
 
 app.listen(port, function(err)
 {
@@ -21,5 +21,6 @@ app.listen(port, function(err)
     else
     {
         open('http://localhost:' + port);
+        console.log("Server ready and listening on " + port + "...");
     }
-})
+});
