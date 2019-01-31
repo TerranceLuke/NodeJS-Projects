@@ -2,34 +2,30 @@
   "name": "nodejs-projects",
   "version": "1.0.0",
   "description": "NodeJS playground for testing and learning.",
-  "main": "index.js",
-  "scripts": 
-  {
+  "main": "index.html",
+  "scripts": {
+    "prestart": "node buildScripts/startMessage.js",
+    "start": "nodemon buildScripts/srcServer.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": 
-  {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/TerranceLuke/NodeJS-Projects.git"
   },
-  "keywords": 
-  [
+  "keywords": [
     "NodeJS"
   ],
   "author": "Terrance Luke",
   "license": "MIT",
-  "bugs": 
-  {
+  "bugs": {
     "url": "https://github.com/TerranceLuke/NodeJS-Projects/issues"
   },
   "homepage": "https://github.com/TerranceLuke/NodeJS-Projects#readme",
-  "dependencies": 
-  {
-    "express": "^4.16.4",
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "chalk": "^2.4.2",
+    "nodemon": "^1.18.9",
     "opn": "^5.4.0"
-  },
-  "devDependencies": 
-  {
-    "nodemon": "^1.18.9"
   }
 }
