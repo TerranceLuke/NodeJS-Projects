@@ -1,12 +1,12 @@
-import express from 'express';
-import path from 'path';
-import open from 'opn';
-import webpack from 'webpack';
-import config from '../webpack.config.dev';
+import express from "express";
+import path from "path";
+import open from "opn";
+import webpack from "webpack";
+import config from "../webpack.config.dev";
 
-const port = 3000;
-const app = express();
-const compiler = webpack(config);
+let port = 3000;
+let app = express();
+let compiler = webpack(config);
 
 app.use(require('webpack-dev-middleware')(compiler, {
         noInfo: true,
@@ -33,3 +33,8 @@ app.listen(port, function(err)
         console.log("Server ready and listening on " + port + "...");
     }
 });
+
+// export * from 'express';
+// export * from 'path';
+// export * from 'opn';
+// export * from 'webpack';
